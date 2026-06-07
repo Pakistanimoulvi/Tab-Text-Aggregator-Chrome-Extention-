@@ -37,3 +37,11 @@ A lightweight Chrome Extension (Manifest V3) that extracts and aggregates the vi
 ├── popup.js           # Frontend logic handling the UI interaction and extraction
 └── background.js      # Background service worker (ready for message-passing workflows)
 
+
+
+
+## Limitations
+
+Due to Chrome's strict security architecture and Content Security Policy (CSP) guidelines:
+* **Protected Pages:** The extension cannot inject scripts into or extract text from `chrome://` settings, the Chrome Web Store, or `about:blank`.
+* **PDFs and Iframes:** Text inside embedded PDFs or cross-origin `<iframe>` elements will not be captured by `document.body.innerText`.
