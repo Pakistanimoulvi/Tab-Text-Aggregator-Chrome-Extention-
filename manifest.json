@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Text Aggregator",
+  "version": "1.0",
+  "description": "Aggregates visible text from all highlighted tabs into a single downloadable .txt file.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
