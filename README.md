@@ -1,3 +1,23 @@
+Installation
+Clone or download this repository to your local machine.
+
+Open Google Chrome and navigate to chrome://extensions/.
+
+Enable Developer mode by toggling the switch in the top-right corner.
+
+Click Load unpacked in the top-left corner.
+
+Select the directory containing the project files.
+
+How to Use
+Select multiple tabs in your Chrome window by holding down Ctrl (Windows) or Cmd (Mac) and clicking the tabs you want to aggregate.
+
+Click the Tab Text Aggregator icon in your extension toolbar.
+
+Click the Aggregate Tab Text button.
+
+Choose a save location for your aggregated_tabs_text.txt file when the download prompt appears.
+
 # Tab Text Aggregator
 
 A lightweight Chrome Extension (Manifest V3) that extracts and aggregates the visible text content from all highlighted (selected) tabs into a single, downloadable `.txt` file.
@@ -16,3 +36,4 @@ A lightweight Chrome Extension (Manifest V3) that extracts and aggregates the vi
 ├── popup.html         # The extension's popup UI
 ├── popup.js           # Frontend logic handling the UI interaction and extraction
 └── background.js      # Background service worker (ready for message-passing workflows)
+
